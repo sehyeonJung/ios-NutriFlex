@@ -107,7 +107,7 @@ struct HIITpage: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 150.0, height: 150.0).overlay(
                                     RoundedRectangle(cornerRadius: 30)
-                                        .stroke(Color.black, lineWidth: 2) // 검은 선
+                                        .stroke(Color.black, lineWidth: 2) 
                                 )
                         }
                         
