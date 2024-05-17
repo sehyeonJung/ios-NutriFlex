@@ -85,7 +85,7 @@ struct WeightsView_Previews: PreviewProvider {
 */
 
 import SwiftUI
-
+import AVKit
 
 struct WeightsView: View {
     @StateObject private var shoulderViewModel = ShoulderViewModel()
@@ -182,10 +182,16 @@ struct WeightDetailed<T: ExerciseProtocol & Identifiable>: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Image(exercise.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity)
+                if let videoLink = exercise.videoLink {
+                    VideoPlayer(player: AVPlayer(url: URL(string: videoLink)!))
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxHeight: 300)
+                } else {
+                    Image(exercise.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: .infinity)
+                }
                 
                 Text(exercise.name)
                     .font(.title)
