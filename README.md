@@ -3,8 +3,7 @@
 Assignment 3 - Group Project
 
 ## GitHub Link ##
-
-https://github.com/trisarahhtops/eventinder
+https://github.com/sehyeonJung/ios-NutriFlex
 
 ## Student Name and ID ##
 13659990 Se Hyeon Jung
