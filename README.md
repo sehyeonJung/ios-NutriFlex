@@ -3,7 +3,7 @@
 Assignment 3 - Group Project
 
 ## GitHub Link ##
-https://github.com/sehyeonJung/ios-NutriFlex
+https://github.com/sehyeonJung/ios-NutriFlex.git
 
 ## Presentation Link ##
 https://www.canva.com/design/DAGFCj7Vl5I/C2xfX0w_M7e59lyh0PT8cA/edit?utm_content=DAGFCj7Vl5I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
